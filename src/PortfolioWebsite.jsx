@@ -168,7 +168,7 @@ export default function PortfolioWebsite() {
                 <p>LinkedIn: <a href="https://linkedin.com/in/shuklam20" className="underline text-blue-500">linkedin.com/in/shuklam20</a></p>
                 <p>GitHub: <a href="https://github.com/shuklam20" className="underline text-blue-500">github.com/shuklam20</a></p>
                 <a
-                  href="/Manas_Shukla_Resume.pdf"
+                  href="/Manas_Shukla_CV.pdf"
                   download
                   className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl transition"
                 >
