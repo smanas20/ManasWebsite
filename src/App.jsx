@@ -26,7 +26,7 @@ export default function PortfolioWebsite() {
 
           <section className="text-center mb-10 px-2">
             <img
-              src="/profile.jpg"
+              src="/profile.JPEG"
               alt="Manas Shukla"
               className="mx-auto mb-4 w-32 h-32 sm:w-36 sm:h-36 rounded-full object-cover border-4 border-blue-500 shadow-lg"
             />
@@ -127,7 +127,7 @@ export default function PortfolioWebsite() {
                 <p>Phone: (267) 240–4348</p>
                 <p>LinkedIn: <a href="https://linkedin.com/in/shuklam20" className="text-blue-400 underline">linkedin.com/in/shuklam20</a></p>
                 <p>GitHub: <a href="https://github.com/shuklam20" className="text-blue-400 underline">github.com/shuklam20</a></p>
-                <p><a href="/Manas_Shukla_Resume.pdf" download className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl transition">Download Resume</a></p>
+                <p><a href="/Manas_Shukla_CV.pdf" download className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl transition">Download Resume</a></p>
               </CardContent></Card>
             </TabsContent>
           </Tabs>
