@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Sun, Moon } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
-
+import ProjectsHybrid from "@/components/ProjectsHybrid";
 export default function PortfolioWebsite() {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -70,9 +70,9 @@ export default function PortfolioWebsite() {
             <Tabs defaultValue="about" className="w-full">
               <TabsList className="flex flex-wrap justify-center gap-3 mb-8">
                 <TabsTrigger value="about">About</TabsTrigger>
+                <TabsTrigger value="experience">Experience</TabsTrigger>
                 <TabsTrigger value="projects">Projects</TabsTrigger>
                 <TabsTrigger value="skills">Skills</TabsTrigger>
-                <TabsTrigger value="experience">Experience</TabsTrigger>
                 <TabsTrigger value="education">Education</TabsTrigger>
                 <TabsTrigger value="interests">Interests</TabsTrigger>
                 <TabsTrigger value="certifications">Certifications</TabsTrigger>
@@ -87,27 +87,6 @@ export default function PortfolioWebsite() {
                 </CardContent></Card>
               </TabsContent>
 
-              <TabsContent value="projects">
-                <Card><CardContent>
-                  <h2 className="text-2xl font-bold mb-2">Projects</h2>
-                  <ul className="list-disc list-inside space-y-2">
-                    <li><strong>Multistation Machine Automation:</strong> PLCs, HMI, SQL integration at Sensata Technologies.</li>
-                    <li><strong>Robot Vision & Motion Planning:</strong> AI object recognition and autonomous robotics at Universal Logic.</li>
-                    <li><strong>Multi-Drone Simulation Platform:</strong> ROS & Gazebo flight algorithms for drone swarms.</li>
-                    <li><strong>Design Automation Platform:</strong> NX/Isight for turbine blades at Quest Global.</li>
-                  </ul>
-                </CardContent></Card>
-              </TabsContent>
-
-              <TabsContent value="skills">
-                <Card><CardContent>
-                  <h2 className="text-2xl font-bold mb-2">Skills</h2>
-                  <p><strong>Languages:</strong> Python, C++, R, MATLAB, C#, Ladder Logic, Structured Text</p>
-                  <p><strong>Frameworks/Tools:</strong> TensorFlow, PyTorch, ROS, TwinCAT, Siemens TIA Portal, Git, Docker</p>
-                  <p><strong>Industrial & DevOps:</strong> Beckhoff, PLCs, SCADA, HMI, MES Integration, AWS, SQL</p>
-                </CardContent></Card>
-              </TabsContent>
-
               <TabsContent value="experience">
                 <Card><CardContent>
                   <h2 className="text-2xl font-bold mb-2">Experience</h2>
@@ -117,6 +96,32 @@ export default function PortfolioWebsite() {
                     <li><strong>University of Pennsylvania</strong> – Research Assistant, Real-Time Systems Lab (2017–2018)</li>
                     <li><strong>Quest-Global Inc.</strong> – CAD Developer for Rolls-Royce (2011–2013)</li>
                   </ul>
+                </CardContent></Card>
+              </TabsContent>
+
+{/*              <TabsContent value="projects">
+                <Card><CardContent>
+                  <h2 className="text-2xl font-bold mb-2">Projects</h2>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li><strong>Multistation Machine Automation:</strong> PLCs, HMI, SQL integration at Sensata Technologies.</li>
+                    <li><strong>Robot Vision & Motion Planning:</strong> AI object recognition and autonomous robotics at Universal Logic.</li>
+                    <li><strong>Multi-Drone Simulation Platform:</strong> ROS & Gazebo flight algorithms for drone swarms.</li>
+                    <li><strong>Design Automation Platform:</strong> NX/Isight for turbine blades at Quest Global.</li>
+                  </ul>
+                </CardContent></Card>
+              </TabsContent>*/}
+              <TabsContent value="projects">
+                <Card><CardContent>
+                  <ProjectsHybrid />
+                </CardContent></Card>
+              </TabsContent>
+
+              <TabsContent value="skills">
+                <Card><CardContent>
+                  <h2 className="text-2xl font-bold mb-2">Skills</h2>
+                  <p><strong>Languages:</strong> Python, C++, R, MATLAB, C#, Ladder Logic, Structured Text</p>
+                  <p><strong>Frameworks/Tools:</strong> TensorFlow, PyTorch, ROS, TwinCAT, Siemens TIA Portal, Git, Docker</p>
+                  <p><strong>Industrial & DevOps:</strong> Beckhoff, PLCs, SCADA, HMI, MES Integration, AWS, SQL</p>
                 </CardContent></Card>
               </TabsContent>
 
