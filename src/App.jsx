@@ -4,6 +4,8 @@ import { Sun, Moon } from "lucide-react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import ProjectsHybrid from "@/components/ProjectsHybrid";
+import AboutEnhancements from "@/components/AboutEnhancements";
+
 export default function PortfolioWebsite() {
   const [darkMode, setDarkMode] = useState(true);
 
@@ -76,40 +78,43 @@ export default function PortfolioWebsite() {
                 <TabsTrigger value="education">Education</TabsTrigger>
                 <TabsTrigger value="interests">Interests</TabsTrigger>
                 <TabsTrigger value="certifications">Certifications</TabsTrigger>
-                <TabsTrigger value="recommendations">Recommendations</TabsTrigger>
                 <TabsTrigger value="contact">Contact</TabsTrigger>
               </TabsList>
 
               <TabsContent value="about">
                 <Card><CardContent>
-                  <h2 className="text-2xl font-bold mb-2">About Me</h2>
-                  <p>I am a Senior Systems Engineer with expertise in automation, robotics, and machine learning. I love solving engineering problems that merge software and hardware at scale.</p>
+                  <AboutEnhancements />
                 </CardContent></Card>
               </TabsContent>
 
-              <TabsContent value="experience">
-                <Card><CardContent>
-                  <h2 className="text-2xl font-bold mb-2">Experience</h2>
-                  <ul className="list-disc list-inside space-y-2">
-                    <li><strong>Sensata Technologies</strong> – Senior Systems Engineer (2022–2025)</li>
-                    <li><strong>Universal Logic Inc.</strong> – Machine Learning Engineer (2018–2022)</li>
-                    <li><strong>University of Pennsylvania</strong> – Research Assistant, Real-Time Systems Lab (2017–2018)</li>
-                    <li><strong>Quest-Global Inc.</strong> – CAD Developer for Rolls-Royce (2011–2013)</li>
-                  </ul>
-                </CardContent></Card>
-              </TabsContent>
+            <TabsContent value="experience">
+              <Card><CardContent>
+                <h2 className="text-2xl font-bold mb-2">Experience</h2>
+                <ul className="list-disc list-inside space-y-4">
+                  <li>
+                    <strong>Sensata Technologies</strong>: Senior Systems Engineer (January 2022 – March 2025)
+                    <p>Led automation design for multistation manufacturing setups. Developed and deployed industrial control systems using Siemens TIA Portal, Beckhoff TwinCAT, and SQL-based MES integrations, improving line efficiency by 20%.</p>
+                  </li>
+                  <li>
+                    <strong>Universal Logic Inc.</strong>: Machine Learning Engineer (May 2018 – January 2022)
+                    <p>Developed and deployed AI-based robotic vision systems for material handling. Implemented object detection pipelines using TensorFlow and trained deep neural nets for real-time pick-and-place applications, reducing manual intervention by 35%.</p>
+                  </li>
+                  <li>
+                    <strong>University of Pennsylvania</strong>: Research Assistant, Real-Time Systems Lab (June 2017 – May 2018)
+                    <p>Designed flight coordination algorithms for multi-drone simulation environments using ROS and Gazebo. Conducted research on real-time path planning and collision avoidance in dynamic obstacle environments.</p>
+                  </li>
+                  <li>
+                    <strong>University of Pennsylvania</strong>: Graduate Research Assistant, Vagelos Lab (May 2016 – June 2017)
+                    <p>Developed a 3D mathematical model using the Lattice Boltzmann Method (LBM) to analyze platelet aggregation in blood flow. Applied parallelization techniques to reduce simulation time by 25%. Implemented local mesh refinement for micro-particle tracking, increasing simulation resolution by 10%. Wrote high-performance C++ code and visualized data using Tecplot and ParaView.</p>
+                  </li>
+                  <li>
+                    <strong>Quest-Global Inc</strong>: Geometry Automation Engineer (June 2017 – May 2018)
+                    <p>Automated turbine blade design workflows using NX and Isight. Created custom CAD utilities and scripts for blade geometry generation, reducing design time by 30% while improving consistency across CAD pipelines.</p>
+                  </li>
+                </ul>
+              </CardContent></Card>
+            </TabsContent>
 
-{/*              <TabsContent value="projects">
-                <Card><CardContent>
-                  <h2 className="text-2xl font-bold mb-2">Projects</h2>
-                  <ul className="list-disc list-inside space-y-2">
-                    <li><strong>Multistation Machine Automation:</strong> PLCs, HMI, SQL integration at Sensata Technologies.</li>
-                    <li><strong>Robot Vision & Motion Planning:</strong> AI object recognition and autonomous robotics at Universal Logic.</li>
-                    <li><strong>Multi-Drone Simulation Platform:</strong> ROS & Gazebo flight algorithms for drone swarms.</li>
-                    <li><strong>Design Automation Platform:</strong> NX/Isight for turbine blades at Quest Global.</li>
-                  </ul>
-                </CardContent></Card>
-              </TabsContent>*/}
               <TabsContent value="projects">
                 <Card><CardContent>
                   <ProjectsHybrid />
@@ -128,8 +133,8 @@ export default function PortfolioWebsite() {
               <TabsContent value="education">
                 <Card><CardContent>
                   <h2 className="text-2xl font-bold mb-2">Education</h2>
-                  <p><strong>M.S. Mechanical Engineering</strong> – University of Pennsylvania (2014–2016)</p>
-                  <p><strong>B.Tech Mechanical Engineering</strong> – Vellore Institute of Technology (2007–2011)</p>
+                  <p><strong>M.S. Mechanical Engineering</strong> – University of Pennsylvania, Philadelphia, PA, USA (August 2014 – May 2016)</p>
+                  <p><strong>B.Tech Mechanical Engineering</strong> – Vellore Institute of Technology, Vellore, TN, India (July 2007 – June 2011)</p>
                 </CardContent></Card>
               </TabsContent>
 
@@ -137,9 +142,10 @@ export default function PortfolioWebsite() {
                 <Card><CardContent>
                   <h2 className="text-2xl font-bold mb-2">Interests</h2>
                   <ul className="list-disc list-inside space-y-2">
-                    <li>Violin performance and composition</li>
-                    <li>Home automation & custom electronics</li>
-                    <li>Hiking, nature photography, and exploring national parks</li>
+                    <li>Playing violin</li>
+                    <li>Cooking, enjoying time with my son</li>
+                    <li>Running, boxing and working out</li>
+                    <li>Hiking, nature photography, and exploring trails near and far</li>
                   </ul>
                 </CardContent></Card>
               </TabsContent>
@@ -149,20 +155,13 @@ export default function PortfolioWebsite() {
                   <h2 className="text-2xl font-bold mb-2">Certifications & Online Courses</h2>
                   <ul className="list-disc list-inside space-y-2">
                     <li><strong>Deep Learning Specialization</strong> – Coursera</li>
+                    <li><strong>Car Driving NanoDegree</strong> – Udacity</li>
                     <li><strong>Generative AI with LLMs</strong> – DeepLearning.AI</li>
                     <li><strong>AI for Robotics</strong> – Georgia Tech / Udacity</li>
                     <li><strong>Machine Learning with Python</strong> – IBM / Coursera</li>
                     <li><strong>Meta Front-End Development</strong> – Coursera</li>
                     <li><strong>Industrial Automation with PLC</strong> – Udemy</li>
                   </ul>
-                </CardContent></Card>
-              </TabsContent>
-
-              <TabsContent value="recommendations">
-                <Card><CardContent>
-                  <h2 className="text-2xl font-bold mb-2">Recommendations</h2>
-                  <blockquote className="italic text-gray-700 dark:text-gray-300">“Manas is a driven engineer and problem solver. I had the pleasure of working with him at Sensata, and his automation solutions saved hours of manual effort across teams.” — Former Manager</blockquote>
-                  <blockquote className="italic text-gray-700 dark:text-gray-300 mt-4">“His deep knowledge of robotics and vision systems was critical to our project success. Highly recommended.” — Peer Engineer at Universal Logic</blockquote>
                 </CardContent></Card>
               </TabsContent>
 
