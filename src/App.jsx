@@ -160,7 +160,7 @@ export default function PortfolioWebsite() {
                     <li><strong>AI for Robotics</strong> – Georgia Tech / Udacity</li>
                     <li><strong>Machine Learning with Python</strong> – IBM / Coursera</li>
                     <li><strong>Meta Front-End Development</strong> – Coursera</li>
-                    <li><strong>Industrial Automation with PLC</strong> – Udemy</li>
+                    <li><a href="https://www.udemy.com/course/from-wire-to-plc-a-to-z-compilation/"><strong>From Wire to PLC , A Bootcamp In Industrial Automation</strong> – Udemy</a></li>
                   </ul>
                 </CardContent></Card>
               </TabsContent>
