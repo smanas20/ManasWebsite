@@ -172,7 +172,7 @@ export default function PortfolioWebsite() {
                   <p>Phone: (267) 240–4348</p>
                   <p>LinkedIn: <a href="https://linkedin.com/in/shuklam20" className="text-blue-400 underline">linkedin.com/in/shuklam20</a></p>
                   <p>GitHub: <a href="https://github.com/smanas20" className="text-blue-400 underline">github.com/smanas20</a></p>
-                  <p><a href="/Manas_Shukla_CV.pdf" download className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl transition">Download Resume</a></p>
+                  <p><a href="/Manas_Shukla_Resume.pdf" download className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl transition">Download Resume</a></p>
                 </CardContent></Card>
               </TabsContent>
             </Tabs>
